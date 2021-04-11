@@ -1,21 +1,9 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "browsers": ["Chrome >= 40", "ie >= 10", "Firefox >= 50", "safari >= 7"],
-        "include": [
-          "transform-es2015-arrow-functions",
-          "es6.array.find",
-          "es6.array.find-index",
-          "es6.promise",
-          "es6.string.includes",
-          "es6.array.fill",
-          "es6.string.code-point-at"
-        ]
-      },
-      "useBuiltIns": "entry"
-    }],
-    "react",
-    "stage-0"
+      "@babel/preset-env",
+      "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
   ]
 }
